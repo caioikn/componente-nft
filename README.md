@@ -14,7 +14,7 @@ Este projeto tem como objetivo criar um componente de cartão de visualização 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
 ## Acesso ao projeto
-Projeto não hospedado.
+Você pode acessar o projeto clicando [aqui](https://caioikn.github.io/componente-nft/).
 
 ## Abrir e rodar o projeto
 1. Clone este repositório em sua máquina local ou baixe os arquivos clicando [aqui](https://github.com/caioikn/componente-nft/archive/main/componente-nft.zip).
