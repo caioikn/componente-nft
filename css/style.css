@@ -1,0 +1,128 @@
+:root {
+    --fundo-principal: hsl(217, 54%, 11%);
+    --fundo-card: hsl(216, 50%, 16%);
+
+    --branco: hsl(0, 0%, 100%);
+    --azul-claro: hsl(215, 51%, 70%);
+    --ciano: hsl(178, 100%, 50%);
+}
+
+body {
+    align-items: center;
+    background-color: var(--fundo-principal);
+    display: flex;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    height: 100vh;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--fundo-card);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
+    max-width: 375px;
+    padding: 30px;
+}
+
+.card__imagem__container {
+    position: relative;
+    display: inline-block;
+}
+
+.card__imagem {
+    border-radius: 18px;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+}
+
+.card__icone {
+    align-items: center;
+    background-size: cover;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 50%;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 49%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.card__imagem__container:hover .card__icone {
+    background-color: rgba(0, 255, 247, 0.5);
+    border-radius: 18px;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.card__titulo {
+    color: var(--branco);
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 18px 0;
+}
+
+.card__descricao {
+    color: var(--azul-claro);
+    line-height: 1.5rem;
+    margin-bottom: 18px;
+}
+
+.card__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.card__info__valor,
+.card__info__tempo {
+    align-items: center;
+    display: flex;
+    gap: 9px;
+}
+
+.card__info__valor span {
+    color: var(--ciano);
+}
+
+.card__info__tempo span {
+    color: var(--azul-claro);
+    font-weight: 500;
+}
+
+.card__linha {
+    border-color: var(--azul-claro);
+    margin-bottom: 18px;
+}
+
+.card__rodape {
+    align-items: center;
+    color: var(--azul-claro);
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    gap: 18px;
+}
+
+.card__rodape img {
+    width: 30px;
+    border: 2px solid var(--branco);
+    border-radius: 50%;
+}
+
+.card__rodape span {
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.card__titulo:hover,
+.card__rodape span:hover {
+    color: var(--ciano);
+    transition: 0.5s;
+}

@@ -3,27 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>Componente de Cartão de Visualização NFT</title>
 </head>
 
 <body>
+    <div class="card">
+        <div class="card__imagem__container">
+            <img class="card__imagem" src="./images/image-equilibrium.jpg" alt="Equilibrium">
 
-    Equilibrium #3429
+            <div class="card__icone">
+                <img src="./images/icon-view.svg">
+            </div>
+        </div>
 
-    Our Equilibrium collection promotes balance and calm.
+        <div>
+            <h2 class="card__titulo">Equilibrium #3429</h2>
 
-    0.041 ETH
-    3 days left
+            <p class="card__descricao">Nossa coleção Equilibrium promove equilíbrio e calma.</p>
 
-    Creation of Jules Wyvern
+            <div class="card__info">
+                <div class="card__info__valor">
+                    <img src="./images/icon-ethereum.svg" alt="Ethereum">
 
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
+                    <span>0.041 ETH</span>
+                </div>
+
+                <div class="card__info__tempo">
+                    <img src="./images/icon-clock.svg" alt="Ícone relógio">
+
+                    <span>3 days left</span>
+                </div>
+            </div>
+        </div>
+
+        <hr class="card__linha">
+
+        <div class="card__rodape">
+            <img src="http://github.com/caioikn.png" alt="Avatar">
+
+            <p>Criado por <span>Caio<span></p>
+        </div>
     </div>
 </body>
 
